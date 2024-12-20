@@ -71,32 +71,11 @@ nav{
     transition: all 0.5s ease-in-out;
 }
 
-.navbar select{
-    color: #383838;
-    background-color: transparent;
-    border: none;
-    text-decoration: none;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: 500;
-    transition: all 0.5s ease-in-out;
-}
-
-.navbar a:hover, .navbar select:hover, .navbar select:focus{
+.navbar a:hover, .navbar a:focus{
     color: white;
-    padding: 3px 25px;
+    padding: 3px 30px;
     background-color: #383838;
     border-radius: 30px;
-}
-
-.navbar select option:nth-child(1){
-    display: none;
-    position: absolute;
-    text-align: center;
-}
-
-.navbar select option{
-    text-align: left;
 }
 
 @media (max-width: 720px) {
@@ -105,15 +84,11 @@ nav{
     }
 
     .navbar{
-        gap: 5%;
+        gap: 10%;
     }
 
-    .navbar a, .navbar select{
+    .navbar a{
         font-size: 2.5vw;
-    }
-
-    .navbar select option{
-        font-size: 1rem;
     }
 
     .navbar a:hover, .navbar select:hover, .navbar select:focus{
@@ -230,7 +205,7 @@ nav{
     font-size: 1vw;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 830px) {
     .home img{
         width: 30vw;
     }
@@ -359,13 +334,13 @@ nav{
     background-color: #383838;
 }
 
-@media (max-width: 430px) {
+@media (max-width: 830px) {
     .about h2{
-        font-size: 2.5vw;
+        font-size: 3vw;
     }
     
     .about h1{
-        font-size: 4.5vw;
+        font-size: 5vw;
     }
 
     .about_container{
@@ -377,7 +352,7 @@ nav{
     }
 
     .about_container img{
-        width: 35vw;
+        width: 40vw;
         height: auto;
     }
 
@@ -389,22 +364,20 @@ nav{
     }
 
     .about_teks h3{
-        font-size: 3.5vw;
+        font-size: 5vw;
         text-align: center;
     }
 
     .about_teks p{
-        width: 41vw;
-        height: auto;
-        color: #383838;
-        font-size: 2vw;
+        width: 80vw;
+        font-size: 3vw;
         text-align: center;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
     
     .about_teks a{
-        width: 30vw;
-        font-size: 2vw;
+        width: 50vw;
+        font-size: 3vw;
     }
 }
 
@@ -554,6 +527,85 @@ nav{
     text-align: center;
 }
 
+@media (max-width: 830px) {
+    .projects h3{
+        font-size: 4.5vw;
+    }
+    
+    .projects h1{
+        color: #686868;
+        font-size: 6.5vw;
+    }
+
+    .scrdes{
+        gap: 30px;
+    }
+
+    .scrdes .probar{
+        width: 65vw;
+        height: auto;
+        border-radius: 20px;
+    }
+    
+    .probar img{
+        width: 25vw;
+        margin-bottom: 20px;
+        border: 3px solid rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .probar .text h2{
+        width: 100%;
+        color: #383838;
+        font-size: 4vw;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    
+    .probar .text p{
+        font-size: 2.5vw;
+        margin-bottom: 10px;
+    }
+    
+    .probar .text a{
+        width: 100%;
+        padding: 7px 10%;
+        color: #383838;
+        font-size: 2.5vw;
+        text-decoration: none;
+        text-align: center;
+        border: 2px solid #383838;
+        border-radius: 10px;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .scrdes .button a{
+        width: auto;
+        padding: 10px 10px;
+        color: #383838;
+        border: 2px solid #383838;
+        border-radius: 10px;
+        transition: all 0.5s ease-in-out;
+        gap: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .scrdes .button a:hover{
+        color: white;
+        background-color: #383838;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+    }
+    
+    .scrdes .button a i{
+        font-size: 2vw;
+        text-decoration: none;
+        text-align: center;
+    }
+}
+
 /* MySkill Section */
 
 .skills{
@@ -586,8 +638,6 @@ nav{
     width: 100%;
     height: auto;
     padding: 30px 30px;
-    overflow-x: scroll;
-    scrollbar-color: transparent transparent;
     gap: 30px;
     display: flex;
     justify-content: center;
@@ -649,7 +699,7 @@ nav{
     width: 100%;
     background-color: white;
     border: 2px solid #383838;
-    border-radius: 10px;
+    border-radius: 5px;
     overflow: hidden;
 }
 
@@ -771,4 +821,117 @@ nav{
     color: white;
     background-color: #383838;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+}
+
+@media (max-width: 830px) {
+    .skills h3{
+        color: #383838;
+        font-size: 4.5vw;
+    }
+    
+    .skills h1{
+        color: #686868;
+        font-size: 6.5vw;
+    }
+    
+    .skil{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skilbar{
+        width: 75vw;
+        height: 63vh;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .skilbar h2{
+        font-size: 5vw;
+        margin-bottom: 10px;
+    }
+
+    .skilbar .stat .persen p{
+        width: 100%;
+        color: #686868;
+        font-size: 3.5vw;
+        font-weight: 500;
+        text-align: left;
+        margin-bottom: 5px;
+    }
+    
+    /* DesignCard */
+    
+    .stat .persen .uiux{
+        font-size: 3.5vw;
+        padding: 3px 10px;
+    }
+    
+    .stat .persen .grafis{
+        font-size: 3.5vw;
+        padding: 3px 10px;
+    }
+    
+    .stat .persen .figma{
+        font-size: 3.5vw;
+        padding: 3px 10px;
+    }
+    
+    .stat .persen .canva{
+        font-size: 3.5vw;
+        padding: 3px 10px;
+    }
+    
+    /* Front-End Card */
+    
+    .stat .persen .html{
+        font-size: 3.5vw;
+        padding: 3px 10px;
+    }
+    
+    .stat .persen .css{
+        font-size: 3.5vw;
+        padding: 3px 10px;
+    }
+    
+    .stat .persen .js{
+        font-size: 3.5vw;
+        padding: 3px 10px;
+    }
+    
+    .stat .persen .react{
+        font-size: 3.5vw;
+        padding: 3px 10px;
+    }
+    
+    /* Back-End Card */
+    
+    .stat .persen .sql{
+        font-size: 3.5vw;
+        padding: 3px 10px;
+    }
+    
+    .stat .persen .php{
+        font-size: 3.5vw;
+        padding: 3px 10px;
+    }
+    
+    .stat .persen .crud{
+        font-size: 3.5vw;
+        padding: 3px 10px;
+    }
+    
+    .stat .persen .auth{
+        font-size: 3.5vw;
+        padding: 3px 10px;
+    }
+
+    .skilbar a{
+        font-size: 3vw;
+    }
 }
