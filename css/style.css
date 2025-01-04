@@ -101,31 +101,20 @@ nav{
 .home{
     width: 100%;
     height: 100vh;
+    padding: 50px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.gambar{
-    width: 14vw;
-    height: 29vh;
-    border-radius: 100%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.home .gambar img{
+.home img{
     width: 14vw;
     height: auto;
     border: 5px solid #383838;
     border-radius: 100%;
-}
-
-.gambar:hover img{
-    transform: scale(1.1vw);
+    margin-bottom: 20px;
+    margin-top: 50px;
 }
 
 .teksHome{
