@@ -107,13 +107,25 @@ nav{
     align-items: center;
 }
 
-.home img{
+.gambar{
+    width: 14vw;
+    height: 29vh;
+    border-radius: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .gambar img{
     width: 14vw;
     height: auto;
     border: 5px solid #383838;
     border-radius: 100%;
-    margin-bottom: 10px;
-    margin-top: 50px;
+}
+
+.gambar:hover img{
+    transform: scale(1.1vw);
 }
 
 .teksHome{
@@ -186,6 +198,7 @@ nav{
 .button a:nth-child(1):hover{
     color: white;
     background-color: #383838;
+    box-shadow: 0px 0px 15px 0px #383838;
 }
 
 .button a:nth-child(2){
@@ -332,6 +345,7 @@ nav{
 .about_teks a:hover{
     color: white;
     background-color: #383838;
+    box-shadow: 0px 0px 20px 0px #383838;
 }
 
 @media (max-width: 830px) {
@@ -645,7 +659,7 @@ nav{
 }
 
 .skilbar{
-    width: 27vw;
+    width: 26vw;
     height: 70vh;
     background-color: white;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
@@ -662,7 +676,7 @@ nav{
     width: 100%;
     color: #383838;
     font-size: 2vw;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-align: center;
 }
 
@@ -934,4 +948,77 @@ nav{
     .skilbar a{
         font-size: 3vw;
     }
+}
+
+.contact{
+    width: 100%;
+    height: 100vh;
+    padding: 30px 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact h3{
+    color: #383838;
+    font-size: 1.5vw;
+}
+
+.contact h1{
+    color: #686868;
+    font-size: 3vw;
+    margin-bottom: 10px;
+}
+
+.media{
+    width: 100%;
+    height: auto;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+    gap: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.media a{
+    width: 51.5px;
+    height: 50px;
+    color: #383838;
+    border: 2px solid #383838;
+    border-radius: 50%;
+    margin-right: 30px;
+    font-size: 1.3rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.media a:hover{
+    color: #f1f1f1;
+    background-color: #383838;
+}
+
+
+footer{
+    width: 100%;
+    height: auto;
+    padding: 10px 30px;
+    background-color: #383838;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: poppins;
+    text-decoration: none;
 }
