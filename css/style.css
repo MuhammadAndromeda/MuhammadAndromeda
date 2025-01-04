@@ -109,11 +109,11 @@ nav{
 }
 
 .home img{
-    width: 14vw;
+    width: 15vw;
     height: auto;
     border: 5px solid #383838;
     border-radius: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     margin-top: 50px;
 }
 
